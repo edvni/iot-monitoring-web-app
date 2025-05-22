@@ -1,0 +1,44 @@
+/* src/styles/Header.css */
+
+.app-header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* stay above content */
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1rem;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+}
+
+.logout-button:hover {
+  background-color: #3a7bc8;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 0.75rem;
+  }
+}

@@ -1,0 +1,55 @@
+
+.export-button:hover:not(:disabled) {
+  background-color: #3a7bc8;
+}
+
+.export-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.export-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.export-dialog {
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.export-dialog h3 {
+  margin-top: 0;
+  color: #f70000;
+}
+
+.export-dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.export-danger-button {
+  background-color: #b61515;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.export-danger-button:hover {
+  background-color: #8f1010;
+}
